@@ -1,5 +1,98 @@
-#img{
-    height: 15px;
-    width: 15px;
-    display: inline-block;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#app {
+    width: 90%;
+    max-width: 800px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#player {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#album-art {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+#playlists, #songs {
+    margin-top: 20px;
+}
+
+.playlist, .song {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.playlist img, .song img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.playlist-name, .song-name {
+    flex-grow: 1;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#theme-toggle {
+    display: flex;
+    align-items: center;
+}
+
+#theme-select {
+    margin-left: 10px;
+}
+
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.green {
+    background-color: #d4e157;
+    color: #000000;
+}
+
+#audio-controls {
+    margin-top: 10px;
+}
+
+#prev-btn, #play-pause-btn, #next-btn {
+    margin: 0 5px;
 }
